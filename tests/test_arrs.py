@@ -5,6 +5,7 @@ def test_get():
     assert arrs.get([1, 2, 3], 1, "test") == 2
     assert arrs.get([], 2, "test") == "test"
     assert arrs.get([0, 1, 2, 3], -2, "test") == "test"
+    assert arrs.get([0, 1, 2, 3], 5, "test") == "test"
 
 
 def test_slice():
